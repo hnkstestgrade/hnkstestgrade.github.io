@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+   <style>
+   *{margin:0;padding: 0;}
+body{
+    width:100%;
+    min-width: 320px;
+    
+    margin:0 auto;
+   
+    color: black;
+    line-height: 2.5;
+}
+   .grid {
+    margin:15% auto;
+       
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+   
+    width: 88%;
+    place-items: center;
+    place-content: center;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    overflow:hidden;
+    font-size: 35px;
+    
+}
+
+
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-col-3{grid-column: span 3 / auto;}
+
+.span-col-4{grid-column: span 4 / auto;}
+
+.span-row-4{grid-row: span 4 / auto;}
+
+.span-col-5{grid-column:span 5/auto;
+font-size: 25px;
+}
+
+.bighead{ position: relative;
+width: 90%;
+padding-top: 5%;
+}
+
+.headnav{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+     
+}
+.headnav ul li{
+    float:left;
+    height:70px;
+    background-color:rgb(20,108,185);
+    list-style: none;
+    text-align: center;
+    line-height: 70px;
+}
+.headnav ul li:nth-child(1){
+    width: 30%;
+    
+}
+.headnav ul li:nth-child(1) img {
+    width: 90%; 
+    padding-left: 10%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.headnav ul li:nth-child(2){
+    width: 60%;
+    padding-left: 10%;
+    text-align: left;
+    vertical-align:middle;
+    color:white;
+    line-height: 70px;
+    font-size: 25px;
+    
+}
+footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+background-color:rgb(20,108,185);
+color:lightgray;
+font-size: 15px;
+overflow: hidden;
+}
+
+footer a{
+    text-decoration: none;
+    color:lightgray;
+}
+
+@media only screen and (max-width:600px){
+    .headnav ul li:nth-child(1){width: 100%;}
+
+    .headnav ul li:nth-child(1) img {
+    width: 70%; 
+    height: 90%;
+    padding-right: 10%;
+    vertical-align: middle;
+    text-align: center;}
+
+    .headnav ul li:nth-child(2){display: none};
+
+    footer a {display: none;}
+    footer{font-size: 25px; padding-left: 2%;}
+
+    .grid{font-size: 15px;width: 100%;}
+   .span-col-5{font-size: 15px;}
+}
+
+</style>
+</head>
+<title>网上数据服务平台</title>
+
+ <header class="headnav">
+    <ul>
+        <li>
+            <a href="../index1.html" >
+                <img src="./lgssheadpic.png" alt="" >
+            </a>
+        </li>
+        <li>网上数据服务平台</li>
+        <li></li>
+    </ul>
+    </header>
+
+<body background= "./bgcofgrade.jpg"; style="background-repeat:no-repeat; background-size:100% 100%; 
+    background-attachment:fixed">
+  <div class="grid">
+  <div>姓名：</div>
+  <div>宁鹤翔</div>
+  <div>性别：</div>
+  <div>男</div>
+  <div class="span-col-2 span-row-4">
+    <img class="bighead" src="./bighead.png" alt="">
+  </div>
+  <div class="span-col-2">出生日期：</div>
+  <div class="span-col-2">1994/05/12</div>
+  <div>报考岗位：</div>
+  <div class="span-col-3">醴陵市司法局基层司法所职位2</div>
+  <div>学历：</div>
+  <div>大学本科</div>
+  <div>政治背景：</div>
+  <div>共青团员</div>
+  <div class="span-col-4">行政职业能力测试分数</div>
+  <div class="span-col-2">74</div>
+  <div class="span-col-4">申论概述分数</div>
+  <div class="span-col-2">72</div>
+  <div class="span-col-4">专业知识分数</div>
+  <div class="span-col-2">83</div>
+  <div class="span-col-4">笔试成绩总分</div>
+  <div class="span-col-2">223</div>
+  <div class="span-col-4">最低开考比例</div>
+  <div class="span-col-2">05：01</div>
+  <div class="span-col-4">笔试成绩排名</div>
+  <div class="span-col-2">3</div>
+  <div class="span-col-4">入选面试人数</div>
+  <div class="span-col-2">11</div>
+  <div class="span-col-4">面试成绩分数</div>
+  <div class="span-col-2">79</div>
+  <div class="span-col-4">最终成绩（加权）</div>
+  <div class="span-col-2">75.8</div>
+  <div class="span-col-4">最终成绩排名</div>
+  <div class="span-col-2">3</div>
+  <div class="span-col-4">录取情况</div>
+  <div class="span-col-2">未录取</div>
+  <div class="span-col-5" style="font-size:0.8em;">加试考生各项成绩权重占比为：行测分数30%，申论分数30%，专业知识10%，面试分数30%。</div>
+</div>
+
+</body>
+
+<footer> 
+   组织单位：湖南省人事考试院
+    &nbsp;&nbsp;
+    <a href="../index1.html">Copyright © 2024 湖南省人事考试院 版权所有</a>&nbsp;&nbsp;
+    <a href="https://beian.miit.gov.cn/#/Integrated/index">湘ICP备20010150号</a>
+ 
+</footer>
+</html>
