@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(./xuanqubg.jpg) 0 -90px repeat;
+    height: 100%;
+    overflow: auto;
+}
+
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.header {
+    width: 1000px;
+    height: 157px;
+    background: url(./xuanqutou.png) 0 0 no-repeat;
+}
+
+.content {
+    background: #fff;
+    padding: 20px 35px 40px;
+    border: 2px solid #2d88b6;
+    border-top: 0 none;
+}
+
+.content .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bcd6ed;
+    padding: 5px;
+    color: #054d84;
+}
+
+.content a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    margin: 5px;
+}
+
+
+
+.content a:hover {
+    color: #0852f1;
+    text-decoration: underline;
+}
